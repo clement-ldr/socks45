@@ -3,7 +3,7 @@ import logging
 import socket
 import traceback
 import platform
-from struct import unpack , pack
+from struct import unpack, pack
 
 
 logging.basicConfig(level=logging.WARNING)
@@ -13,8 +13,6 @@ READ_MAX_SIZE = 65535
 BUFFER_SIZE_LIMIT = 500_000
 MAX_QUEUED_CONNECTIONS = 1000  # backlog
 TIMEOUT = 30  # Time before closing innactive connections
-
-bindip = None  # a local ip we will bind to (optional)
 
 
 
